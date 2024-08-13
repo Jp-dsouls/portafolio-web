@@ -1,100 +1,108 @@
 ---
+import About from "../About.astro";
+import TimeLine from "../TimeLine.astro";
 import TabItem from "./TabItem.astro";
 import TabItemContent from "./TabItemContent.astro";
 ---
 
 <section class="tabs">
   <header class="tab-buttons">
-    <TabItem dataTab="1" Item="Inicio"/>
-    <TabItem dataTab="2" Item="Experiencia"/>
-    <TabItem dataTab="3" Item="Habilidades"/>
-    <TabItem dataTab="4" Item="Proyectos"/>
+    <TabItem dataTab="1" Item="Inicio" />
+    <TabItem dataTab="2" Item="Experiencia" />
+    <TabItem dataTab="3" Item="Skills" />
+    <TabItem dataTab="4" Item="Habilidades" />
+    <TabItem dataTab="5" Item="Proyectos" />
   </header>
   <div class="tab-contents">
+    <!-- Inicio -->
     <TabItemContent dataTab="1">
-      <h2>Tab 1 Title</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-          <img src="https://picsum.photos/600/400?random=1" alt="Image content" title="Image title" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+      <About />
     </TabItemContent>
+    <!-- Experiencia -->
     <TabItemContent dataTab="2">
-      <h2>Tab 1 Title</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-          <img src="https://picsum.photos/600/400?random=1" alt="Image content" title="Image title" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+      <TimeLine />
     </TabItemContent>
-    <TabItemContent dataTab="3">
-      <h2>Tab 1 Title</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-          <img src="https://picsum.photos/600/400?random=1" alt="Image content" title="Image title" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-    </TabItemContent>
-    <TabItemContent dataTab="4">
-      <h2>Tab 1 Title</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-          <img src="https://picsum.photos/600/400?random=1" alt="Image content" title="Image title" />
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
-    </TabItemContent>
+    <!-- Skills -->
+    <TabItemContent dataTab="3" />
+    <!-- Habildiades -->
+    <TabItemContent dataTab="4" />
+    <!-- Proyectos -->
+    <TabItemContent dataTab="4" />
   </div>
 </section>
 
 <style>
-.tabs {
-  display: flex;
-  overflow: hidden;
-  height: 100vh;
-}
-.tab-buttons {
-  display: flex;
-  flex-direction: column;
-  width: 15%;
-  position: sticky;
-  top: 0;
-  background-color: #0d1117;
-  padding: 1rem;
-}
-.tab-contents {
-  padding: 2rem;
-  width: 85%;
-  color: #e2e8f0;
-  height: 100%;
-  overflow-y: auto;
-}
-@media screen and (max-width: 768px) {
   .tabs {
-    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
   }
   .tab-buttons {
-    width: 100%;
-    height: auto;
-    background-color: rgba(1, 4, 9, 0.75);
-    backdrop-filter: blur(8px);
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    position: sticky;
+    top: 0;
+    background-color: #0d1117;
+    padding: 1rem;
   }
   .tab-contents {
-    width: 100%;
+    padding: 2rem;
+    width: 85%;
+    color: #e2e8f0;
+    height: 100%;
   }
-}
+  @media screen and (max-width: 768px) {
+    .tabs {
+      flex-direction: column;
+    }
+    .tab-buttons {
+      width: 100%;
+      height: auto;
+      background-color: rgba(1, 4, 9, 0.75);
+      backdrop-filter: blur(8px);
+    }
+    .tab-contents {
+      width: 100%;
+    }
+  }
 </style>
 
 <script>
-  const tabButtons = document.querySelectorAll('.tab-button');
-  const tabContents = document.querySelectorAll('.tab-content');
-  const tabButtonsContainer = document.querySelector('.tab-buttons');
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabButtons = document.querySelectorAll(".tab-button");
+    const tabContents = document.querySelectorAll(".tab-content");
+    const tabButtonsContainer = document.querySelector(".tab-buttons");
 
-tabButtons.forEach(button => {
-    button.addEventListener('click', function (this: HTMLElement) {
-      const tab = this.getAttribute('data-tab');
+    // Verifica si los elementos existen antes de proceder
+    if (
+      tabButtons.length > 0 &&
+      tabContents.length > 0 &&
+      tabButtonsContainer
+    ) {
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", function (this: HTMLElement) {
+          const tab = this.getAttribute("data-tab");
 
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+          tabContents.forEach((content) => content.classList.remove("active"));
 
-      this.classList.add('active');
-      document.querySelector(`.tab-content[data-tab="${tab}"]`).classList.add('active');
-      document.querySelector('.tab-contents').scrollTo({ top: 0, behavior: 'smooth' });
+          this.classList.add("active");
+          const contentElement = document.querySelector(
+            `.tab-content[data-tab="${tab}"]`
+          );
+          if (contentElement) {
+            contentElement.classList.add("active");
+          }
+          const tabContentsContainer = document.querySelector(".tab-contents");
+          if (tabContentsContainer) {
+            tabContentsContainer.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        });
+      });
 
-    });
+      tabButtons[0].classList.add("active");
+      tabContents[0].classList.add("active");
+    }
   });
-
-tabButtons[0].classList.add('active');
-  tabContents[0].classList.add('active');
 </script>

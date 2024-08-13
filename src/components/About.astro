@@ -1,0 +1,37 @@
+---
+import { Image } from "astro:assets";
+import imgWebp from "../../public/img.webp";
+---
+
+<section class="container mx-auto">
+  <div class="flex items-center justify-center mx-auto h-screen">
+    <div class="w-1/2">
+      <h2 class="text-7xl mb-3">Junior Pezantes</h2>
+      <p class="text-2xl mb-3">
+        Ingeniero de software & desarrollador fullstack.
+        <span class="" aria-hidden="true">|</span>
+      </p>
+      <p class="mb-3">
+        Diseño y desarrollo servicios para clientes de todos los tamaños,
+        especializándome en la creación de sitios web, servicios web y tiendas
+        en línea modernos y elegantes.
+      </p>
+      <a
+        class="px-4 py-2 bg-slate-500 rounded-sm"
+        target="_blank"
+        href="../../public/CV/cv.pdf">Descargar CV</a
+      >
+    </div>
+    <div class="flex items-center justify-center w-1/2">
+      <Image
+        src={imgWebp}
+        alt="asd"
+        width="400"
+        height="400"
+        class="rounded-full w-72 h-72"
+        loading="eager"
+        draggable="false"
+      />
+    </div>
+  </div>
+</section>
