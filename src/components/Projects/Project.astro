@@ -1,0 +1,335 @@
+---
+import Search from "../../../public/icons/Search.astro";
+---
+
+<div class="filter flex flex-wrap gap-3">
+	<div class="relative">
+		<input type="text" class="search__input px-3 py-3" placeholder="Stadt suchen">
+		<button class="search__button absolute top-0 bottom-0 right-4 m-0 p-0">
+      <Search/>
+    </button>
+	</div>
+
+	<button class="button --active text-sm font-semibold px-5 py-3 text-black">Proyectos</button>
+	<button class="button text-sm font-semibold px-5 py-3 text-black">Web</button>
+	<button class="button text-sm font-semibold px-5 py-3 text-black">Videojuegos</button>
+	<button class="button text-sm font-semibold px-5 py-3 text-black">Clones</button>
+</div>
+
+<section class="grid">
+
+	<a class="card flex flex-col overflow-hidden relative" href="https://www.google.com/search?q=Rom" target="_blank" rel="nofollow noopener">
+		<picture class="card__picture block w-full h-auto overflow-hidden relative">
+			<img class="card__image w-full h-full object-cover" src="https://images.unsplash.com/photo-1548585742-1df49e753a83?w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Menschen, die tagsüber neben dem weißen und braunen Kuppelgebäude spazieren gehen" title="Foto von Claudio Hirschberger auf Unsplash">
+		</picture>
+		<span class="card__more relative h-12 w-12 inline-flex self-end items-center justify-center"></span>
+		<div class="py-3 px-2 relative">
+			<p class="card__location uppercase text-sm flex items-center gap-1">Web</p>
+			<h3 class="card__title">Rom</h3>
+			<p class="card__description">Rom, die Hauptstadt Webs, ist eine kosmopolitische Großstadt, die fast 3.000 Jahre Kunstgeschichte, Architektur und Kultur von Weltrang vorweisen kann.</p>
+		</div>
+	</a>
+
+	<a class="card flex flex-col overflow-hidden relative" href="https://www.google.com/search?q=Amsterdam" target="_blank" rel="nofollow noopener">
+		<picture class="card__picture block w-full h-auto overflow-hidden relative">
+			<img class="card__image w-full h-full object-cover" src="https://images.unsplash.com/photo-1583295125721-766a0088cd3f?w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Weißbetongebäude in der Nähe von Gewässern tagsüber" title="Foto von Matheo JBT auf Unsplash">
+		</picture>
+		<span class="card__more relative h-12 w-12 inline-flex self-end items-center justify-center"></span>
+		<div class="py-3 px-2 relative">
+			<p class="card__location uppercase text-sm flex items-center gap-1">Clones</p>
+			<h3 class="card__title">Amsterdam</h3>
+			<p class="card__description">Amsterdam ist die Hauptstadt der Clones.</p>
+		</div>
+	</a>
+
+	<a class="card flex flex-col overflow-hidden relative" href="https://www.google.com/search?q=Athen" target="_blank" rel="nofollow noopener">
+		<picture class="card__picture block w-full h-auto overflow-hidden relative">
+			<img class="card__image w-full h-full object-cover" src="https://images.unsplash.com/photo-1635672097594-a0cbb7aa3a9e?w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Blick auf die Ruinen eines römischen Theaters" title="Foto von Kieran Everett auf Unsplash">
+		</picture>
+		<span class="card__more relative h-12 w-12 inline-flex self-end items-center justify-center"></span>
+		<div class="py-3 px-2 relative">
+			<p class="card__location uppercase text-sm flex items-center gap-1">Videojuegos</p>
+			<h3 class="card__title">Athen</h3>
+			<p class="card__description">Athen ist die Hauptstadt Videojuegoss. Die Stadt bildete außerdem das Zentrum des antiken Videojuegoss, das zu seiner Zeit eine einflussreiche Kultur und ein wichtiges Reich war.</p>
+		</div>
+	</a>
+
+	<a class="card flex flex-col overflow-hidden relative" href="https://www.google.com/search?q=Brügge" target="_blank" rel="nofollow noopener">
+		<picture class="card__picture block w-full h-auto overflow-hidden relative">
+			<img class="card__image w-full h-full object-cover" src="https://images.unsplash.com/photo-1572895854902-117546c75fb3?w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Braune Betongebäude neben ruhigem Gewässer" title="Foto von Elijah G auf Unsplash">
+		</picture>
+		<span class="card__more relative h-12 w-12 inline-flex self-end items-center justify-center"></span>
+		<div class="py-3 px-2 relative">
+			<p class="card__location uppercase text-sm flex items-center gap-1">Proyectos</p>
+			<h3 class="card__title">Brügge</h3>
+			<p class="card__description">Brügge ist die Hauptstadt von Westflandern im Nordwesten Proyectoss. Charakteristisch sind die Kanäle, kopfsteingepflasterten Straßen und mittelalterlichen Gebäude der Stadt.</p>
+		</div>
+	</a>
+
+	<a class="card flex flex-col overflow-hidden relative" href="https://www.google.com/search?q=Brüssel" target="_blank" rel="nofollow noopener">
+		<picture class="card__picture block w-full h-auto overflow-hidden relative">
+			<img class="card__image w-full h-full object-cover" src="https://images.unsplash.com/photo-1582124534218-f7bf8b908f2d?w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Braunes und schwarzes Betongebäude tagsüber unter weißem Himmel" title="Foto von Jonathan Ricci auf Unsplash">
+		</picture>
+		<span class="card__more relative h-12 w-12 inline-flex self-end items-center justify-center"></span>
+		<div class="py-3 px-2 relative">
+			<p class="card__location uppercase text-sm flex items-center gap-1">Proyectos</p>
+			<h3 class="card__title">Brüssel</h3>
+			<p class="card__description">Die Stadt Brüssel ist eine der 19 Gemeinden der zweisprachigen Region Brüssel-Hauptstadt und die Hauptstadt des Königreichs Proyectos mit 188.737 Einwohnern im amtlichen Gemeindegebiet.</p>
+		</div>
+	</a>
+
+
+	<a class="card flex flex-col overflow-hidden relative" href="https://www.google.com/search?q=Venedig" target="_blank" rel="nofollow noopener">
+		<picture class="card__picture block w-full h-auto overflow-hidden relative">
+			<img class="card__image w-full h-full object-cover" src="https://images.unsplash.com/photo-1552751118-d3cde54807de?w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Boote auf dem Wasser in der Nähe von Gebäuden" title="Foto von Thomas Haas auf Unsplash">
+		</picture>
+		<span class="card__more relative h-12 w-12 inline-flex self-end items-center justify-center"></span>
+		<div class="py-3 px-2 relative">
+			<p class="card__location uppercase text-sm flex items-center gap-1">Web</p>
+			<h3 class="card__title">Venedig</h3>
+			<p class="card__description">Venedig ist die Hauptstadt der Region Venetien in Norditalien und wurde auf mehr als 100 kleinen Inseln in einer Adria-Lagune erbaut.</p>
+		</div>
+	</a>
+</section>
+
+<style>
+.search__input {
+    border: 1px solid #b245ff;
+    color: #0f0617;
+    border-radius: 2rem;
+}
+
+.search__button {
+    color: #b245ff;
+    background: transparent;
+    border: 0;
+}
+
+.button {
+    border-radius: 2rem;
+    border: 2px solid #b245ff;
+    background: transparent;
+}
+
+.button.--active {
+    border-color: #b245ff;
+    background: #b245ff;
+    color: #ffffff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 1.5rem;
+    box-shadow: 1.4px 2.7px 3.6px rgba(178, 169, 169, 0.017), 3.8px 7.5px 10px rgba(178, 169, 169, 0.025), 9px 18.1px 24.1px rgba(178, 169, 169, 0.033), 30px 60px 80px rgba(178, 169, 169, 0.05);
+    color: #0f0617;
+    text-decoration: none;
+    transition: all 0.25s;
+}
+
+.card__picture {
+    aspect-ratio: 1 / 1;
+    transition: background 0.25s;
+}
+
+.card__picture:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(15, 6, 23, 0) 25%, rgba(15, 6, 23, 0));
+    z-index: 1;
+}
+
+.card__image {
+    transition: transform 0.25s;
+}
+
+.card__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.card__more {
+    margin: -1.5rem 1.5rem -1.5rem 0;
+    border-radius: 50%;
+    background: #fac384;
+    color: #ffffff;
+    transition: background-color 0.25s;
+    z-index: 2;
+}
+
+.card__more:after {
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.card__location {
+    color: #b245ff;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.card__location:before {
+    content: "\f3c5";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 0.75rem;
+}
+
+.card:nth-child(5n) {
+    justify-content: flex-end;
+    aspect-ratio: 2 / 3;
+}
+
+.card:nth-child(5n) .card__picture {
+    position: absolute;
+    inset: 0;
+    aspect-ratio: auto;
+}
+
+.card:nth-child(5n) .card__picture:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(rgba(15, 6, 23, 0) 25%, rgba(15, 6, 23, 0.5));
+}
+
+.card:nth-child(5n) .card__picture:after {
+    background: linear-gradient(rgba(15, 6, 23, 0) 25%, rgba(15, 6, 23, 0.5));
+}
+
+.card:nth-child(5n) .card__more {
+    display: none;
+}
+
+.card:nth-child(5n) .card__content {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    background: none;
+}
+
+.card:nth-child(5n) .card__location {
+    color: #ffffff;
+}
+
+.card.--inactive {
+    display: none;
+}
+
+.card:hover {
+    box-shadow: 1.8px 3.7px 3.6px rgba(178, 169, 169, 0.052), 5px 10.1px 10px rgba(178, 169, 169, 0.075), 12.1px 24.4px 24.1px rgba(178, 169, 169, 0.098), 40px 81px 80px rgba(178, 169, 169, 0.15);
+}
+
+.card:hover .card__picture:after {
+    background: linear-gradient(rgba(178, 69, 255, 0) 25%, rgba(178, 69, 255, 0.5));
+}
+
+.card:hover .card__image {
+    transform: scale(1.1);
+}
+
+.card:hover .card__more {
+    background: #b245ff;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card:nth-child(5n) {
+        grid-column: span 2;
+        aspect-ratio: 3 / 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .card__more {
+        margin: -2rem 1.5rem -2rem 0;
+        height: 4rem;
+        width: 4rem;
+    }
+    .card__more:after {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+    
+    .card:nth-child(5n) {
+        aspect-ratio: auto;
+    }
+    
+    .card:nth-child(5n) .card__content {
+        max-width: 66.6667%;
+    }
+}
+
+</style>
+
+<script>
+const buttons = document.querySelectorAll(".button");
+const search = document.querySelector(".search__input") as HTMLInputElement | null;
+const grid = document.querySelector(".grid");
+if (!grid) {
+    throw new Error('El contenedor grid no fue encontrado.');
+}
+const gridItems = Array.from(grid.querySelectorAll(".card"));
+
+buttons.forEach((button) => {
+	button.addEventListener("click", function () {
+		buttons.forEach((item) => {
+			item.classList.remove("--active");
+			item.setAttribute("aria-pressed", "false");
+		});
+
+		button.classList.add("--active");
+		button.setAttribute("aria-pressed", "true");
+
+		const location = button.textContent ? button.textContent.toLowerCase() : '';
+		const filteredItems = gridItems.filter(
+			(item) =>
+				item.querySelector(".card__location")?.textContent?.toLowerCase() === location
+		);
+
+		if (location === "alle") {
+			gridItems.forEach((item) => item.classList.remove("--inactive"));
+			return;
+		}
+
+		gridItems.forEach((item) => item.classList.add("--inactive"));
+		filteredItems.forEach((item) => item.classList.remove("--inactive"));
+	});
+});
+
+if (search) {
+    search.addEventListener("input", function () {
+        const searchText = search.value.toLowerCase();
+        gridItems.forEach((item) => {
+            const city = item.querySelector(".card__title")?.textContent?.toLowerCase() || '';
+            if (!city.includes(searchText)) {
+                item.classList.add("--inactive");
+            } else {
+                item.classList.remove("--inactive");
+            }
+        });
+    });
+} else {
+    throw new Error('El elemento de búsqueda no fue encontrado.');
+}
+
+
+</script>

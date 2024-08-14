@@ -4,6 +4,7 @@ import Skills from "../Skills/Skills.astro";
 import TimeLine from "../TimeLine.astro";
 import TabItem from "./TabItem.astro";
 import TabItemContent from "./TabItemContent.astro";
+import Projects from "../Projects/Project.astro"
 ---
 
 <section class="tabs">
@@ -11,10 +12,9 @@ import TabItemContent from "./TabItemContent.astro";
     <TabItem dataTab="1" Item="Inicio" />
     <TabItem dataTab="2" Item="Experiencia" />
     <TabItem dataTab="3" Item="Skills" />
-    <TabItem dataTab="4" Item="Habilidades" />
-    <TabItem dataTab="5" Item="Proyectos" />
+    <TabItem dataTab="4" Item="Proyectos" />
   </header>
-  <div class="tab-contents">
+  <div class="tab-contents overflow-y-auto">
     <!-- Inicio -->
     <TabItemContent dataTab="1">
       <About />
@@ -27,10 +27,10 @@ import TabItemContent from "./TabItemContent.astro";
     <TabItemContent dataTab="3"> 
       <Skills/>
     </TabItemContent>
-    <!-- Habildiades -->
-    <TabItemContent dataTab="4" />
     <!-- Proyectos -->
-    <TabItemContent dataTab="4" />
+    <TabItemContent dataTab="4" class="overflow-y-auto">
+      <Projects/>
+    </TabItemContent>
   </div>
 </section>
 
