@@ -4,19 +4,21 @@ import Skills from "../Skills/Skills.astro";
 import TimeLine from "../TimeLine.astro";
 import TabItem from "./TabItem.astro";
 import TabItemContent from "./TabItemContent.astro";
-import Projects from "../Projects/Project.astro"
+import Projects from "../Projects/Project.astro";
+import Contact from "../Contact.astro";
 ---
 
 <section class="tabs">
   <header class="tab-buttons h-screen">
-    <TabItem dataTab="1" Item="Inicio" styleName=""/>
+    <TabItem dataTab="1" Item="Inicio" styleName="" />
     <TabItem dataTab="2" Item="Experiencia" />
     <TabItem dataTab="3" Item="Skills" />
     <TabItem dataTab="4" Item="Proyectos" />
+    <TabItem dataTab="5" Item="Contacto" />
   </header>
   <div class="tab-contents">
     <!-- Inicio -->
-    <TabItemContent dataTab="1" class="overflow-y-hidden" styleName="">
+    <TabItemContent dataTab="1" class="overflow-y-hidden">
       <About />
     </TabItemContent>
     <!-- Experiencia -->
@@ -24,12 +26,16 @@ import Projects from "../Projects/Project.astro"
       <TimeLine />
     </TabItemContent>
     <!-- Skills -->
-    <TabItemContent dataTab="3"> 
-      <Skills/>
+    <TabItemContent dataTab="3">
+      <Skills />
     </TabItemContent>
     <!-- Proyectos -->
     <TabItemContent dataTab="4" class="overflow-y-auto">
-      <Projects/>
+      <Projects />
+    </TabItemContent>
+    <!-- Contacto -->
+    <TabItemContent dataTab="5" class="overflow-y-auto">
+      <Contact />
     </TabItemContent>
   </div>
 </section>
@@ -48,7 +54,6 @@ import Projects from "../Projects/Project.astro"
     padding: 1rem;
   }
   .tab-contents {
-    padding: 2rem;
     width: 85%;
     color: #e2e8f0;
     height: 100%;
