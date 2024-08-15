@@ -8,15 +8,15 @@ import Projects from "../Projects/Project.astro"
 ---
 
 <section class="tabs">
-  <header class="tab-buttons">
-    <TabItem dataTab="1" Item="Inicio" />
+  <header class="tab-buttons h-screen">
+    <TabItem dataTab="1" Item="Inicio" styleName=""/>
     <TabItem dataTab="2" Item="Experiencia" />
     <TabItem dataTab="3" Item="Skills" />
     <TabItem dataTab="4" Item="Proyectos" />
   </header>
-  <div class="tab-contents overflow-y-scroll">
+  <div class="tab-contents">
     <!-- Inicio -->
-    <TabItemContent dataTab="1">
+    <TabItemContent dataTab="1" class="overflow-y-hidden" styleName="">
       <About />
     </TabItemContent>
     <!-- Experiencia -->
@@ -37,8 +37,6 @@ import Projects from "../Projects/Project.astro"
 <style>
   .tabs {
     display: flex;
-    overflow: hidden;
-    height: 100vh;
   }
   .tab-buttons {
     display: flex;

@@ -1,7 +1,7 @@
 ---
-const {dataTab} = Astro.props;
+const {dataTab, styleName} = Astro.props;
 ---
-<div class="tab-content" data-tab={dataTab}>
+<div class="tab-content" data-tab={dataTab} style={styleName}>
   <slot/>
 </div>
 
