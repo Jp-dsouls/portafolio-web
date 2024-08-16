@@ -29,13 +29,17 @@ import PhpStorm from "../../../public/skills/PhpStorm.astro";
 import Deno from "../../../public/skills/Deno.astro";
 
 import SkillItem from "../Skills/SkillItem.astro";
+import Title from "../Title.astro";
+import Swiper from "../../../public/skills/Swiper.astro";
+import Popper from "../../../public/skills/Popper.astro";
 
 ---
-<section class="container p-8 lg:md:sm:mx-auto">
+<section class="container px-8 pt-2 lg:md:sm:mx-auto">
+  <Title title="Skills"/>
   <table>
     <tr>
       <th class="w-1/12"> Frontend </th>
-      <th class="w-11/12 flex flex-wrap gap-4">
+      <th class="w-11/12 flex flex-wrap gap-4 p-4">
         <SkillItem>
           <Html />
         </SkillItem>
@@ -45,11 +49,19 @@ import SkillItem from "../Skills/SkillItem.astro";
         </SkillItem>
   
         <SkillItem>
-          <Js />
+          <Boostrap />
         </SkillItem>
   
         <SkillItem>
+          <Tailwind />
+        </SkillItem>
+
+        <SkillItem>
           <Jquery />
+        </SkillItem>
+
+        <SkillItem>
+          <Js />
         </SkillItem>
   
         <SkillItem>
@@ -65,18 +77,18 @@ import SkillItem from "../Skills/SkillItem.astro";
         </SkillItem>
         
         <SkillItem>
-          <Boostrap />
+            <Swiper/>
         </SkillItem>
-  
+
         <SkillItem>
-          <Tailwind />
-        </SkillItem>
+          <Popper/>
+      </SkillItem>
   
       </th>
     </tr>
     <tr>
       <th class="w-1/12">Backend</th>
-      <th class="w-11/12 flex flex-wrap gap-4"> 
+      <th class="w-11/12 flex flex-wrap gap-4 p-4"> 
   
         <SkillItem>
           <Laravel />
@@ -94,7 +106,7 @@ import SkillItem from "../Skills/SkillItem.astro";
     </tr>
     <tr>
       <th class="w-1/12">Base de datos</th>
-      <th class="w-11/12 flex flex-wrap gap-4"> 
+      <th class="w-11/12 flex flex-wrap gap-4 p-4"> 
   
         <SkillItem>
           <MySQL />
@@ -109,7 +121,7 @@ import SkillItem from "../Skills/SkillItem.astro";
   
     <tr>
       <th class="w-1/12">Despliegue</th>
-      <th class="w-11/12 flex flex-wrap gap-4"> 
+      <th class="w-11/12 flex flex-wrap gap-4 p-4"> 
   
         <SkillItem>
           <Vercel />
@@ -123,7 +135,7 @@ import SkillItem from "../Skills/SkillItem.astro";
     </tr>
     <tr>
       <th class="w-1/12">Tools</th>
-      <th class="w-11/12 flex flex-wrap gap-4"> 
+      <th class="w-11/12 flex flex-wrap gap-4 p-4"> 
         
         <SkillItem>
           <VsCode />

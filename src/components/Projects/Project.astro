@@ -1,19 +1,21 @@
 ---
 import Search from "../../../public/icons/Search.astro";
+import Title from "../Title.astro";
 ---
 <section class="container p-8 lg:md:sm:mx-auto">
+    <Title title="proyectos"/>
     <div class="filter flex flex-wrap gap-3 mb-8">
         <div class="relative">
-            <input type="text" class="search__input px-3 py-3" placeholder="Stadt suchen">
-            <button class="search__button absolute top-0 bottom-0 right-4 m-0 p-0">
+            <input type="text" class="search__input px-3 py-3 text-slate-500" placeholder="Buscar">
+            <button class="search__button absolute top-0 bottom-0 right-4 m-0 p-0 text-slate-500">
           <Search/>
         </button>
         </div>
     
-        <button class="button --active text-sm font-semibold px-5 py-3 text-black">Proyectos</button>
-        <button class="button text-sm font-semibold px-5 py-3 text-black">Web</button>
-        <button class="button text-sm font-semibold px-5 py-3 text-black">Videojuegos</button>
-        <button class="button text-sm font-semibold px-5 py-3 text-black">Clones</button>
+        <button class="button --active text-sm font-semibold px-5 py-3 text-white">Proyectos</button>
+        <button class="button text-sm font-semibold px-5 py-3 text-white">Web</button>
+        <button class="button text-sm font-semibold px-5 py-3 text-white">Videojuegos</button>
+        <button class="button text-sm font-semibold px-5 py-3 text-white">Clones</button>
     </div>
     
     <section class="grid">
@@ -461,26 +463,24 @@ import Search from "../../../public/icons/Search.astro";
 
 <style>
 .search__input {
-    border: 1px solid #b245ff;
-    color: #0f0617;
+    border: 1px solid #f1f5f9 ;
     border-radius: 2rem;
 }
 
 .search__button {
-    color: #b245ff;
     background: transparent;
     border: 0;
 }
 
 .button {
     border-radius: 2rem;
-    border: 2px solid #b245ff;
+    border: 2px solid #64748b;
     background: transparent;
 }
 
 .button.--active {
-    border-color: #b245ff;
-    background: #b245ff;
+    border-color: #64748b;
+    background: #64748b;
     color: #ffffff;
 }
 
@@ -494,7 +494,7 @@ import Search from "../../../public/icons/Search.astro";
     background: #ffffff;
     border-radius: 1.5rem;
     box-shadow: 1.4px 2.7px 3.6px rgba(178, 169, 169, 0.017), 3.8px 7.5px 10px rgba(178, 169, 169, 0.025), 9px 18.1px 24.1px rgba(178, 169, 169, 0.033), 30px 60px 80px rgba(178, 169, 169, 0.05);
-    color: #0f0617;
+    color: #f5f4f7;
     text-decoration: none;
     transition: all 0.25s;
 }
