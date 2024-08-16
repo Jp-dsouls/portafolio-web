@@ -16,7 +16,7 @@ import Email from "../../../public/socialMedia/Email.astro";
 
 <section class="tabs">
   <header class="tab-buttons h-screen">
-    <div class="flex flex-col justify-center items-center mb-10">
+    <div class="hidden lg:md:sm:flex flex-col justify-center items-center mb-10">
       <Image
       src={imgWebp}
       alt="asd"
@@ -34,7 +34,7 @@ import Email from "../../../public/socialMedia/Email.astro";
     <TabItem dataTab="4" Item="Proyectos" />
     <TabItem dataTab="5" Item="Contacto" />
 
-    <div class="flex justify-center items-center mt-auto flex-wrap gap-3">
+    <div class="flex justify-start lg:md:sm:justify-center items-center mt-auto flex-wrap gap-3">
       <GitHub currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://github.com/Jp-dsouls"/>
       <GitLab currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://gitlab.com/werras04"/>
       <Linkdedin currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://www.linkedin.com/in/cesar-junior-pezantes-silva-1047551a1/"/>
