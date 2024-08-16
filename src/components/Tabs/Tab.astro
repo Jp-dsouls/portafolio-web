@@ -6,15 +6,40 @@ import TabItem from "./TabItem.astro";
 import TabItemContent from "./TabItemContent.astro";
 import Projects from "../Projects/Project.astro";
 import Contact from "../Contact.astro";
+import { Image } from "astro:assets";
+import imgWebp from "../../../public/img.webp";
+import GitHub from "../../../public/socialMedia/GitHub.astro";
+import GitLab from "../../../public/socialMedia/GitLab.astro";
+import Linkdedin from "../../../public/socialMedia/Linkdedin.astro";
+import Email from "../../../public/socialMedia/Email.astro";
 ---
 
 <section class="tabs">
   <header class="tab-buttons h-screen">
+    <div class="flex flex-col justify-center items-center mb-10">
+      <Image
+      src={imgWebp}
+      alt="asd"
+      width="400"
+      height="400"
+      class="rounded-full w-48 h-w-60"
+      loading="eager"
+      draggable="false"
+    />
+      <h3 class="text-center text-2xl mb-3 text-slate-300">Junior Pezantes</h3>
+    </div>
     <TabItem dataTab="1" Item="Inicio" styleName="" />
     <TabItem dataTab="2" Item="Experiencia" />
     <TabItem dataTab="3" Item="Skills" />
     <TabItem dataTab="4" Item="Proyectos" />
     <TabItem dataTab="5" Item="Contacto" />
+
+    <div class="flex justify-center items-center mt-auto flex-wrap gap-3">
+      <GitHub currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://github.com/Jp-dsouls"/>
+      <GitLab currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://gitlab.com/werras04"/>
+      <Linkdedin currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://www.linkedin.com/in/cesar-junior-pezantes-silva-1047551a1/"/>
+      <Email currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="mailto:werras04@gmail.com"/>
+    </div>
   </header>
   <div class="tab-contents">
     <!-- Inicio -->
