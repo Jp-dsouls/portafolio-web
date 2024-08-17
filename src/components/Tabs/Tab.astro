@@ -12,10 +12,11 @@ import GitHub from "../../../public/socialMedia/GitHub.astro";
 import GitLab from "../../../public/socialMedia/GitLab.astro";
 import Linkdedin from "../../../public/socialMedia/Linkdedin.astro";
 import Email from "../../../public/socialMedia/Email.astro";
+import Drawer from "../Drawer.astro";
 ---
 
 <section class="tabs">
-  <header class="tab-buttons h-screen">
+  <header class="order-2 hidden w-0 p-0 tab-buttons lg:md:sm:flex lg:md:sm:flex-col lg:md:sm:sticky lg:md:sm:top-0 lg:md:sm:w-[15%] lg:md:sm:h-screen lg:md:sm:p-4 lg:md:sm:bg-[#0d1117]">
     <div class="hidden lg:md:sm:flex flex-col justify-center items-center mb-10">
       <Image
       src={imgWebp}
@@ -34,14 +35,14 @@ import Email from "../../../public/socialMedia/Email.astro";
     <TabItem dataTab="4" Item="Proyectos" />
     <TabItem dataTab="5" Item="Contacto" />
 
-    <div class="flex justify-start lg:md:sm:justify-center items-center mt-auto flex-wrap gap-3">
+    <div class="hidden lg:md:sm:flex justify-start lg:md:sm:justify-center items-center mt-auto flex-wrap gap-3">
       <GitHub currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://github.com/Jp-dsouls"/>
       <GitLab currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://gitlab.com/werras04"/>
       <Linkdedin currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://www.linkedin.com/in/cesar-junior-pezantes-silva-1047551a1/"/>
       <Email currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="mailto:werras04@gmail.com"/>
     </div>
   </header>
-  <div class="tab-contents">
+  <div class="tab-contents order-3">
     <!-- Inicio -->
     <TabItemContent dataTab="1" class="overflow-y-hidden">
       <About />
@@ -63,21 +64,14 @@ import Email from "../../../public/socialMedia/Email.astro";
       <Contact />
     </TabItemContent>
   </div>
+  <Drawer/>
 </section>
 
 <style>
   .tabs {
     display: flex;
   }
-  .tab-buttons {
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    position: sticky;
-    top: 0;
-    background-color: #0d1117;
-    padding: 1rem;
-  }
+
   .tab-contents {
     width: 85%;
     color: #e2e8f0;
