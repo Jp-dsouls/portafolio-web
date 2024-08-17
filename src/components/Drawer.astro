@@ -1,4 +1,9 @@
-
+---
+import GitHub from "../../public/socialMedia/GitHub.astro"
+import GitLab from "../../public/socialMedia/GitLab.astro"
+import Linkdedin from "../../public/socialMedia/Linkdedin.astro"
+import Email from "../../public/socialMedia/Email.astro"
+---
 <div class="flex lg:md:sm:hidden order-1">
   <div class="drawer-items text-center mx-auto text-white lg:flex flex justify-center items-center gap-2 md:hidden">
     <button class="lg:md:sm:block tab-button" data-tab="1">
@@ -21,8 +26,15 @@
       <span class="line"></span>
       <span>Contacto</span>
     </button>
+    <div class="flex gap-3 lg:md:sm:block tab-button">
+      <GitHub currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://github.com/Jp-dsouls"/>
+      <GitLab currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://gitlab.com/werras04"/>
+      <Linkdedin currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="https://www.linkedin.com/in/cesar-junior-pezantes-silva-1047551a1/"/>
+      <Email currentColor="none" stroke="#f8fafc" styleName="width: 25px;" ref="mailto:werras04@gmail.com"/>
+    </div>
+
   </div>
-  <main class="py-8 relative bottom-full left-80">
+  <main class="py-8 relative bottom-full left-[85%]">
     <aside class="drawer">
       <div class="ham">
         <div class="line upper-line"></div>
